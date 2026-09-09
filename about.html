@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/about - y3script</title>
+    <!-- JetBrains Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fixed Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="prompt-user">y3script</span><span class="prompt-at">@</span><span class="prompt-host">dev</span>:<span class="prompt-path">~</span>$
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span class="bracket">[</span>Home<span class="bracket">]</span></a></li>
+                    <li><a href="work.html" class="nav-link"><span class="bracket">[</span>Work<span class="bracket">]</span></a></li>
+                    <li><a href="about.html" class="nav-link active"><span class="bracket">[</span>About<span class="bracket">]</span></a></li>
+                    <li><a href="contact.html" class="nav-link"><span class="bracket">[</span>Contact<span class="bracket">]</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-status">
+                <span class="status-dot"></span> SYS: OPTIMAL
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-wrapper">
+        <div class="terminal-window">
+            
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span class="control-dot close"></span>
+                    <span class="control-dot minimize"></span>
+                    <span class="control-dot maximize"></span>
+                </div>
+                <div class="terminal-title">y3script@portfolio:~/about (bash)</div>
+                <div class="terminal-blank"></div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body">
+                
+                <!-- Command 1: Bio Log -->
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~/about$</span>
+                    <span class="command">cat bio.log</span>
+                </div>
+
+                <div class="terminal-output">
+                    <h1 class="hero-title">
+                        <span class="text-accent">></span> SYSTEM_SPECS // ABOUT
+                    </h1>
+                    <p class="typewriter-text" id="about-tagline">
+                        Software Developer specializing in Python, Web Applications, Desktop GUIs & Terminal UIs.
+                    </p>
+                    <div class="bio-box">
+                        <p>
+                            Hello! I'm <strong class="text-accent">y3script</strong>, a developer driven by crafting practical applications, system utilities, desktop interfaces, and web data pipelines. 
+                        </p>
+                        <p>
+                            My development focus bridges web scraping, modern desktop interfaces, command-line applications, and game mechanics. Whether extracting data from web sources, building terminal interfaces, creating desktop GUIs with modern frameworks like <span class="text-cyan">CustomTkinter</span>, or developing logic-driven games, I enjoy turning ideas into clean, functional code.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Command 2: Skill Matrix -->
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~/about$</span>
+                    <span class="command">./show_skills.sh --classified</span>
+                </div>
+
+                <div class="terminal-output">
+                    <h2 class="section-subtitle"><span class="text-yellow">#</span> TECH_STACK_MATRIX</h2>
+                    
+                    <div class="skills-grid">
+                        
+                        <!-- Skill Category 1 -->
+                        <div class="skill-category">
+                            <div class="category-title">[ LANGUAGES & CORE ]</div>
+                            <ul class="skill-list">
+                                <li><span class="skill-bullet">></span> Python <span class="skill-level">(Primary)</span></li>
+                                <li><span class="skill-bullet">></span> JavaScript (ES6+)</li>
+                                <li><span class="skill-bullet">></span> HTML5 & CSS3</li>
+                                <li><span class="skill-bullet">></span> Shell Scripting (Bash)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Skill Category 2 -->
+                        <div class="skill-category">
+                            <div class="category-title">[ WEB, APIs & SCRAPING ]</div>
+                            <ul class="skill-list">
+                                <li><span class="skill-bullet">></span> Web Scraping & Data Extraction</li>
+                                <li><span class="skill-bullet">></span> Flask</li>
+                                <li><span class="skill-bullet">></span> FastAPI</li>
+                                <li><span class="skill-bullet">></span> RESTful APIs & Asynchronous HTTP</li>
+                            </ul>
+                        </div>
+
+                        <!-- Skill Category 3 -->
+                        <div class="skill-category">
+                            <div class="category-title">[ DESKTOP GUI & TUI ]</div>
+                            <ul class="skill-list">
+                                <li><span class="skill-bullet">></span> CustomTkinter & Tkinter</li>
+                                <li><span class="skill-bullet">></span> Textual (Terminal UI)</li>
+                                <li><span class="skill-bullet">></span> Rich Library</li>
+                                <li><span class="skill-bullet">></span> Pygame (Game Mechanics)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Skill Category 4 -->
+                        <div class="skill-category">
+                            <div class="category-title">[ TOOLS & ENVIRONMENT ]</div>
+                            <ul class="skill-list">
+                                <li><span class="skill-bullet">></span> Git & GitHub Pages</li>
+                                <li><span class="skill-bullet">></span> Linux / Terminal Environments</li>
+                                <li><span class="skill-bullet">></span> VS Code / Terminal Editors</li>
+                                <li><span class="skill-bullet">></span> Media Stream Processing</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Command 3: Project Architecture Breakdown -->
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~/about$</span>
+                    <span class="command">cat architecture_focus.txt</span>
+                </div>
+
+                <div class="terminal-output">
+                    <h2 class="section-subtitle"><span class="text-yellow">#</span> DEVELOPMENT_PHILOSOPHY</h2>
+                    <div class="philosophy-list">
+                        <div class="philosophy-item">
+                            <span class="item-tag">[01] WEB SCRAPING & DATA AGGREGATION:</span>
+                            <span class="item-desc">Extracting, parsing, and structured handling of web data from multiple external sources using lightweight Python backends.</span>
+                        </div>
+                        <div class="philosophy-item">
+                            <span class="item-tag">[02] DESKTOP GUIs & TERMINAL EXCELLENCE:</span>
+                            <span class="item-desc">Designing modern desktop interfaces with CustomTkinter alongside keyboard-driven CLI and TUI apps using Textual and Rich.</span>
+                        </div>
+                        <div class="philosophy-item">
+                            <span class="item-tag">[03] INTERACTIVE LOGIC & GAMES:</span>
+                            <span class="item-desc">Writing clean state management algorithms, custom visual themes, and score handling for interactive software and Pygame titles.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Prompt Line -->
+                <div class="command-line interactive-line">
+                    <span class="prompt">y3script@portfolio:~/about$</span>
+                    <span class="cursor">_</span>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/work - y3script</title>
+    <!-- JetBrains Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fixed Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="prompt-user">y3script</span><span class="prompt-at">@</span><span class="prompt-host">dev</span>:<span class="prompt-path">~</span>$
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span class="bracket">[</span>Home<span class="bracket">]</span></a></li>
+                    <li><a href="work.html" class="nav-link active"><span class="bracket">[</span>Work<span class="bracket">]</span></a></li>
+                    <li><a href="about.html" class="nav-link"><span class="bracket">[</span>About<span class="bracket">]</span></a></li>
+                    <li><a href="contact.html" class="nav-link"><span class="bracket">[</span>Contact<span class="bracket">]</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-status">
+                <span class="status-dot"></span> SYS: OPTIMAL
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-wrapper">
+        <div class="terminal-window">
+            
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span class="control-dot close"></span>
+                    <span class="control-dot minimize"></span>
+                    <span class="control-dot maximize"></span>
+                </div>
+                <div class="terminal-title">y3script@portfolio:~/work (bash)</div>
+                <div class="terminal-blank"></div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body">
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~/work$</span>
+                    <span class="command">ls -la --grid ./projects</span>
+                </div>
+
+                <div class="terminal-output">
+                    <h1 class="hero-title">
+                        <span class="text-accent">></span> PROJECTS_GRID
+                    </h1>
+                    <p class="typewriter-text" id="work-tagline">
+                        Click on any repository to open detail preview mode.
+                    </p>
+                </div>
+
+                <!-- Project Grid (Dynamically Populated) -->
+                <div id="projects-container" class="projects-grid">
+                    <div class="terminal-loading">
+                        <span class="prompt">[INFO]</span> Loading project repositories...
+                    </div>
+                </div>
+
+                <!-- Interactive Prompt Line -->
+                <div class="command-line interactive-line">
+                    <span class="prompt">y3script@portfolio:~/work$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Terminal Modal Preview Popup -->
+    <div id="project-modal" class="modal-backdrop">
+        <div class="modal-window">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span class="control-dot close" id="modal-close-btn"></span>
+                    <span class="control-dot minimize"></span>
+                    <span class="control-dot maximize"></span>
+                </div>
+                <div class="terminal-title" id="modal-title">project_inspect.sh</div>
+                <div class="modal-close-icon" id="modal-x-btn">[X]</div>
+            </div>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Popup details injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

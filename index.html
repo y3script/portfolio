@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/home - y3script</title>
+    <!-- JetBrains Mono Font for authentic terminal look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fixed Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="prompt-user">y3script</span><span class="prompt-at">@</span><span class="prompt-host">dev</span>:<span class="prompt-path">~</span>$
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active"><span class="bracket">[</span>Home<span class="bracket">]</span></a></li>
+                    <li><a href="work.html" class="nav-link"><span class="bracket">[</span>Work<span class="bracket">]</span></a></li>
+                    <li><a href="about.html" class="nav-link"><span class="bracket">[</span>About<span class="bracket">]</span></a></li>
+                    <li><a href="contact.html" class="nav-link"><span class="bracket">[</span>Contact<span class="bracket">]</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-status">
+                <span class="status-dot"></span> SYS: OPTIMAL
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-wrapper">
+        
+        <!-- Terminal Window Frame Component -->
+        <div class="terminal-window">
+            
+            <!-- Window Top Bar with Control Dots -->
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span class="control-dot close"></span>
+                    <span class="control-dot minimize"></span>
+                    <span class="control-dot maximize"></span>
+                </div>
+                <div class="terminal-title">y3script@portfolio:~ (bash)</div>
+                <div class="terminal-blank"></div>
+            </div>
+
+            <!-- Terminal Window Body -->
+            <div class="terminal-body">
+                
+                <!-- Command 1: Execution Prompt -->
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~$</span>
+                    <span class="command">./welcome.sh --verbose</span>
+                </div>
+
+                <!-- Hero Greeting Output -->
+                <div class="terminal-output">
+                    <h1 class="hero-title">
+                        <span class="text-accent">></span> HELLO, WORLD!
+                    </h1>
+                    <p class="typewriter-text" id="hero-tagline">
+                        Software Developer & Systems Enthusiast.
+                    </p>
+                </div>
+
+                <!-- Command 2: System Info Output -->
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~$</span>
+                    <span class="command">cat summary.txt</span>
+                </div>
+
+                <div class="terminal-output system-summary">
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="label">HANDLE:</span>
+                            <span class="value text-success">y3script</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">ROLE:</span>
+                            <span class="value">Developer & Software Engineer</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">FOCUS:</span>
+                            <span class="value">Web Apps, Python Tools & System Scripts</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">STATUS:</span>
+                            <span class="value text-success">Open for collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Navigation Action Directory -->
+                <div class="command-line">
+                    <span class="prompt">y3script@portfolio:~$</span>
+                    <span class="command">ls -la ./navigation</span>
+                </div>
+
+                <div class="terminal-output dir-list">
+                    <div class="dir-grid">
+                        <a href="work.html" class="dir-item">
+                            <span class="dir-permission">drwxr-xr-x</span>
+                            <span class="dir-name">./work/</span>
+                            <span class="dir-desc">View projects, apps, and code repos</span>
+                        </a>
+                        <a href="about.html" class="dir-item">
+                            <span class="dir-permission">drwxr-xr-x</span>
+                            <span class="dir-name">./about/</span>
+                            <span class="dir-desc">Read bio, experience & tech stack</span>
+                        </a>
+                        <a href="contact.html" class="dir-item">
+                            <span class="dir-permission">drwxr-xr-x</span>
+                            <span class="dir-name">./contact/</span>
+                            <span class="dir-desc">Get in touch via email or socials</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Active Interactive Prompt Line -->
+                <div class="command-line interactive-line">
+                    <span class="prompt">y3script@portfolio:~$</span>
+                    <span class="cursor">_</span>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "t-joycade",
+    "name": "T-JoyCade",
+    "description": "Terminal-based retro arcade console application built with Python Rich and Textual. Features Space Invaders and Snake.",
+    "preview": "assets/t-joycade.mp4",
+    "previewType": "video",
+    "tags": ["Python", "TUI", "Rich", "Textual"],
+    "github": "https://github.com/y3script/t-joycade"
+  },
+  {
+    "id": "Magneto",
+    "name": "Magneto",
+    "description": "Movies website that get movies videos from multiples sources",
+    "preview": "assets/Magneto.mp4",
+    "previewType": "video",
+    "tags": ["Python", "WEB", "Flask", "FastAPI"],
+    "github": ""
+  },
+  {
+    "id": "Sudoku",
+    "name": "Sudoku",
+    "description": "Sudoku Game With time score and theme changing.",
+    "preview": "assets/SUDOKU.mp4",
+    "previewType": "video",
+    "tags": ["Python", "Game", "Pygame"],
+    "github": ""
+  },
+  {
+    "id": "Palettro",
+    "name": "Palettro",
+    "description": "Palettro a desktop Gui for picking and selecting colors.",
+    "preview": "assets/Palettro.png",
+    "previewType": "image",
+    "tags": ["Python", "CustomTkinter", "pyautogui"],
+    "github": ""
+  }
+]
