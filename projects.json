@@ -34,5 +34,14 @@
     "previewType": "image",
     "tags": ["Python", "CustomTkinter", "pyautogui"],
     "github": ""
+  },
+  {
+    "id": "TermPaper",
+    "name": "TermPaper",
+    "description": "A lightweight, fast, local desktop wallpaper manager and CLI tool powered by Python, Flask",
+    "preview": "assets/TermPaper.mp4",
+    "previewType": "video",
+    "tags": ["Python", "CLI", "Web","Flask"],
+    "github": ""
   }
 ]
